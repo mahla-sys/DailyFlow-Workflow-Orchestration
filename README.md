@@ -1,3 +1,5 @@
+
+
 # 📘 DailyFlow — UI Architecture & State-Driven Orchestration
 **Version:** 1.0.0 | **Status:** Phase 1 (Frontend Architecture & System Design)
 
@@ -36,3 +38,46 @@ features/   ← Business Logic Layer (User interactions & capabilities)
 entities/   ← Data Model Layer (Business entities)
   ↓
 shared/     ← Global Layer (UI kits, Store, Utils, APIs)
+
+```
+
+## 🌳 Core Directory Structure
+
+```text
+📁 src/
+├── 📂 app/              # Application entry point, global styles, and providers
+├── 📂 pages/            # Page-level components (Dashboard, Settings, Analytics)
+├── 📂 widgets/          # Assembled UI blocks (Header, Sidebar, ChartPanels)
+├── 📂 features/         # Functional units (MoodTracker, TaskManager, VoiceInput)
+├── 📂 entities/         # Data models and schemas (Day, Task, Mood)
+└── 📂 shared/           # Reusable components, Central Store, EventBus, Utils
+
+```
+
+## 🧠 State Management & Infrastructure
+
+* **Central Store:** A custom-built, lightweight state management system ensuring unidirectional data flow.
+* **Pub/Sub Event Bus:** Decoupled communication across distinct features preventing direct file dependencies.
+* **Storage Adapters:** Abstracted storage layers currently utilizing `IndexedDB` and `LocalStorage`, structured for seamless future migration to backend databases (e.g., Supabase).
+
+## 🗺️ Development Roadmap
+
+| Phase | Focus Area | Status |
+| --- | --- | --- |
+| **Phase 0** | Core Architecture (FSD Setup, Custom Store, Event Bus, Storage Adapters) | ✅ Completed |
+| **Phase 1** | Modular MVP (Dashboard Page, Core Widgets, Task/Mood Features) | 🚧 In Progress |
+| **Phase 2** | UI/UX Overhaul (Implementing the Glassmorphic Concept, Transitions) | ⏳ Pending |
+| **Phase 3** | Advanced Capabilities (Voice Input Parsing, Pomodoro Timer, Analytics) | ⏳ Pending |
+| **Phase 4** | Backend Integration (Cloud Sync, Supabase DB, Auth) | ⏳ Pending |
+| **Phase 5** | AI & Automation (Telegram Bot Integration, AI Pattern Analysis) | ⏳ Pending |
+
+## 📐 Strict Coding Guidelines
+
+1. **Unidirectional Dependency:** `widgets` → `features` → `entities` → `shared`. Circular dependencies are strictly prohibited.
+2. **Public API Rule:** Every module must expose its elements exclusively through an `index.js` file (Encapsulation).
+3. **Single Responsibility Principle:** Files are strictly separated by logic: `Model`, `UI`, and `Feature/Controller`.
+4. **Scalability Thresholds:** Files exceeding 200 lines (JS) or 150 lines (CSS) must be refactored into smaller sub-modules.
+
+---
+
+*Developed & Architected by **mahla-systems**.*
