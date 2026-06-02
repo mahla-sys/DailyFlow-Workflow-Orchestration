@@ -11,8 +11,8 @@ This repository encompasses two distinct architectural layers of the frontend de
 
 ### 1. Visionary Concept (The Ultimate Goal)
 The core design philosophy features an abstract, ethereal **Glassmorphism theme** (Dark/Purple aesthetics). These conceptual prototypes define the target UI/UX for the final scalable product.
-*([ Concept UI Part 1](https://github.com/mahla-sys/DailyFlow-Workflow-Orchestration/blob/main/Screenshot%202026-06-02%20130306.png?raw=true)*
-*([ Concept UI Part 2](https://github.com/mahla-sys/DailyFlow-Workflow-Orchestration/blob/main/Screenshot%202026-06-02%20130334.png?raw=true))*
+(https://github.com/mahla-sys/DailyFlow-Workflow-Orchestration/blob/main/Screenshot%202026-06-02%20130306.png?raw=true)
+(https://github.com/mahla-sys/DailyFlow-Workflow-Orchestration/blob/main/Screenshot%202026-06-02%20130334.png?raw=true)
 
 ### 2. Modular MVP (Current Implementation)
 The foundation of the application, built with strict modularity. While visually stripped down for development, it implements the underlying structural patterns required to scale the application to 10,000+ lines of code without style leaks or state conflicts.
@@ -47,7 +47,6 @@ shared/     ← Global Layer (UI kits, Store, Utils, APIs)
 ├── 📂 features/         # Functional units (MoodTracker, TaskManager, VoiceInput)
 ├── 📂 entities/         # Data models and schemas (Day, Task, Mood)
 └── 📂 shared/           # Reusable components, Central Store, EventBus, Utils
-
 
 
 ## 🧠 State Management & Infrastructure
