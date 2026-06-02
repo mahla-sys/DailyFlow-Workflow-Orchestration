@@ -1,0 +1,13 @@
+{
+  "name": "daily-flow",
+  "version": "1.0.0",
+  "description": "DailyFlow Web Application",
+  "main": "src/app/main.js",
+  "scripts": {
+    "start": "node simple-server.js",
+    "dev": "node simple-server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
